@@ -1,0 +1,15 @@
+{
+  "name": "serverless-architecture-backend",
+  "version": "1.0.0",
+  "description": "Demo to show how serverless architecture works",
+  "scripts": {
+    "dev": "node src/index.js"
+  },
+  "author": "Vitor Fonseca",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}

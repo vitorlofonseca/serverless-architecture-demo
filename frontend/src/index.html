@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Where is the hello message?</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", async () => {
+        const helloWorldMessageRequest = await fetch("http://127.0.0.1:3000/");
+        const helloWorldMessage = await helloWorldMessageRequest.text();
+        const appDiv = document.getElementById("app");
+        appDiv.innerHTML = `<h1>${helloWorldMessage}</h1>`;
+      });
+    </script>
+  </body>
+</html>

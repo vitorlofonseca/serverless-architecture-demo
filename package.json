@@ -1,0 +1,18 @@
+{
+  "name": "serverless-architecture",
+  "version": "1.0.0",
+  "description": "Demo to show how serverless architecture works",
+  "scripts": {
+    "dev": "pnpm --parallel --filter=\"./backend\" --filter=\"./frontend\" dev"
+  },
+  "author": "Vitor Fonseca",
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
